@@ -11,6 +11,7 @@ Quando('o filtro por facilidades for selecionado') do
  end
 
 Então('a unidade mais próxima é apresentada.') do
+    element_exists? screen_unidade.unidade_tela
     screen_unidade.unidade_tela.highlight
     valida_unidade = (screen_unidade.unidade_tela.text)
     expect(valida_unidade).to eql('República do Líbano I')
