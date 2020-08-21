@@ -1,4 +1,5 @@
-class CriaScreenUnidades < SitePrism::Page
+
+class CriaScreenUnidades  < SitePrism::Page
     set_url 'https://www.fleury.com.br/unidades'
 
     #Tela
@@ -10,5 +11,6 @@ class CriaScreenUnidades < SitePrism::Page
     element :unidade_tela, '.typographycomponentstyle__H1-sc-1oox73n-1.lomAMa'
     
     #Métodos
-       
+
+
 end     
