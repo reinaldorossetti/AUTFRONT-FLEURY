@@ -20,13 +20,6 @@ Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(app, :browser => :firefox)
 end
 
-# configurando o native_events como true.
-Capybara.register_driver :selenium do |app|
-  profile = Selenium::WebDriver::Firefox::Profile.new
-  profile.native_events = true
-  Capybara::Selenium::Driver.new(app, :browser => :firefox, profile: profile)
-end
-# ago
 
 # Setando a configuração do Driver como padrão.
 Capybara.default_driver = :selenium
